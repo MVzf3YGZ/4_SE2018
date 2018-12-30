@@ -52,11 +52,12 @@ npm安装的库如下
 启动步骤
 
 ```
-$ git clone 
-$ cd 
+$ git clone https://github.com/MVzf3YGZ/4_SE2018.git
+$ cd project
 $ pip install requirements.txt
 $ cd project
 $ cd vue2_frontend
+$ npm install
 $ npm run build
 $ cd ..
 $ python manage.py runserver
