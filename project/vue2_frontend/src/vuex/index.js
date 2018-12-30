@@ -1,0 +1,40 @@
+import Vue from 'vue'
+import Vuex from 'vuex'
+import  jsPDF from 'jspdf'
+Vue.use(Vuex)
+
+const store = new Vuex.Store({
+    // 全局变量
+    state: {
+        user: undefined,
+        canvas:[],
+    },
+    // 修改全局变量必须通过mutations中的方法
+    // mutations只能采用同步方法
+    mutations: {
+        login (state, payload) {
+            state.user = payload
+        },
+        logout (state) {
+            state.user = undefined
+        },
+        add(state,obj) {
+          state.canvas.push(obj);
+        },
+    },
+    // 异步方法用actions
+    // actions不能直接修改全局变量，需要调用commit方法来触发mutation中的方法
+    actions: {
+        login (context, payload) {
+            context.commit('login', payload)
+        },
+        logout (context) {
+            context.commit('logout')
+        },
+        add (context,obj){
+          context.commit('add',obj)
+        }
+    }
+})
+
+export default store

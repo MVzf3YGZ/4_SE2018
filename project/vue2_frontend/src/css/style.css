@@ -1,0 +1,64 @@
+.login-body {background-image:url(¹þ¹¤´ó2.jpg);background-repeat: no-repeat; background-size:cover}
+.div-inline {display:inline}
+option{font:"Times New Roman", Times, serif; font-size:16px}
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    position:fixed;
+    height: 100%;
+    overflow: auto;
+	
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+ .code
+    {
+         font-family:Arial;
+         font-style:italic;
+         color:blue;
+         font-size:30px;
+         border:0;
+         padding:2px 3px;
+         letter-spacing:3px;
+         font-weight:bolder;            
+         float:left;           
+         cursor:pointer;
+         width:150px;
+         height:50px;
+         line-height:60px;
+         text-align:center;
+         vertical-align:middle;
+         background-color:#D8B7E3;
+     }
+span {
+        text-decoration:none;
+        font-size:12px;
+        color:#288bc4;
+        padding-left:10px;
+    }
+span:hover {
+        text-decoration:underline;
+        cursor:pointer;
+    }

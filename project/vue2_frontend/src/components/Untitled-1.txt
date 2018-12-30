@@ -1,0 +1,44 @@
+文件在哪
+http://127.0.0.1:8000/func/func2?yea 这个请求在哪发的
+echatrs2里面是调用本地
+然后那个请求
+是之前echatrts1的接口
+现在注释掉了
+想要在echarts2 里尝试取数
+        .get({url:"./static/func2-2015.json",  async: false })
+vue-resource 里没有这个参数async
+我调用本地还用了axios,这个库原生也不支持参数async
+确实阻塞了，为啥没访问到数据
+没翻墙？
+恩
+下面这个方法挺好
+ funcAsync () {
+      // fetch data
+      return this.$axios.post('')
+    }
+
+    funcDoSomeThing () {
+      this.funcAsync().then(res => {
+          // do some thing
+      })
+    }
+实现逻辑有问题
+三个年份是什么意思
+echarts的展示应该和变量是绑定的
+哪里alert的
+应该照他这么写，https://www.jianshu.com/p/7994176fbcc4
+不是每次换数据都要重新渲染一便图表
+
+      //初始化的时候可以先拿所有的数据，然后再创建图.
+      //一开始的时候把所有的数据都拿过来，后续用户更换年份，再对应更新value中的值，修改对应updateData中的函数。
+
+还有哪地方不明白吗
+我先自己看一会
+谢谢助教
+十分感激
+麻烦
+ 那我断连接了？
+ 等一下，交给你个任务，其他同学有类似问题我就直接让他找你，行吗
+ 好的
+ 断吧
+ ok
