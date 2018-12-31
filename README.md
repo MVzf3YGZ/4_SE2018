@@ -53,7 +53,7 @@ npm安装的库如下
 
 ```
 $ git clone https://github.com/MVzf3YGZ/4_SE2018.git
-$ cd project
+$ cd 4_SE2018
 $ pip install requirements.txt
 $ cd project
 $ cd vue2_frontend
